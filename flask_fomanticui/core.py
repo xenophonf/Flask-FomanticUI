@@ -29,7 +29,9 @@ Implementation of Fomantic UI in Flask.
 
 import warnings
 
-from flask import Blueprint, Markup, current_app, url_for
+from flask import Blueprint, current_app, url_for
+
+from markupsafe import Markup
 
 try:  # pragma: no cover
     from wtforms.fields import HiddenField
